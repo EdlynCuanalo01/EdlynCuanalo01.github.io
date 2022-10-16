@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_page_3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<header>
+  <h1>Formularios</h1>
+</header>
+<nav>
+<ul id="menu">
+  <li><a href="../index.html">Inicio</a></li>
+  <li><a href="listas.html">Listas</a></li>
+  <li><a href="enlaces.html">Enlaces</a></li>
+  <li><a href="tablas final.html">Tablas</a></li>
+  <li><a href="audio.html">Audio</a></li>
+  <li><a href="video.html">Videos</a></li>
+  <li><a href="imagen1.html">Imagenes</a></li>
+  <li><a href="formularios.html">Formularios</a></li>
+<li><a href="formatos de texto.html" class="chico">Formatos de texto</a></li>
+</ul>	
+</nav>
+<main>
+<section>
+    <h2>Formularios</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim nesciunt autem beatae rerum est excepturi illo ab, mollitia quisquam molestias ducimus unde quidem eos, quis. Facilis consequatur, doloremque voluptate obcaecati porro exercitationem quasi, atque, ratione, aliquam pariatur natus ullam reiciendis?</p>
+  <form action="procesamiento.html" method="get" name="form1" id="form1">
+    <label for="Apellido">Nombre:</label>
+    <input type="text" name="nombre" id="nombre">
+	  <br><br>
+    <label for="Apellido">Apellido:</label>
+    <input type="text" name="Apellido" id="Apellido">
+	  <br><br>
+    <input type="submit" name="boton1" id="boton1" value="Enviar">
+  </form>
+</section>	
+<section>
+  <h2>Formulario usando select, checkbox y radiobutton</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim nesciunt autem beatae rerum est excepturi illo ab, mollitia quisquam molestias ducimus unde quidem eos, quis. Facilis consequatur, doloremque voluptate obcaecati porro exercitationem quasi, atque, ratione, aliquam pariatur natus ullam reiciendis?</p>
+  <form action="procesamiento.html" method="get" name="form2" id="form2">
+    <label for="pais">¿De qué pais nos visitas?:</label>
+    <select name="pais" id="pais">
+      <option value="mx">México</option>
+      <option value="us">Estados Unidos</option>
+      <option value="es">España</option>
+      <option value="as">Argentina</option>
+      <option value="co">Colombia</option>
+      <option value="it">Italia</option>
+    </select>
+	 <br><br>
+	 <label>Genero</label>
+	 <p>
+	   <label>
+	     <input type="radio" name="Genero" value="femenino" id="Genero_0">
+	     Femenino</label>
+	   <br>
+	   <label>
+	     <input type="radio" name="Genero" value="mascullino" id="Genero_1">
+	     Masculino</label>
+	   <br>
+      </p>
+¿Cual sera tu residencia durante tu estancia?<br>
+<table width="200">
+	   <tr>
+	     <td><label>
+	       <input type="checkbox" name="residencia_temporal" value="hotel" id="residencia_temporal_0">
+	       Hotel</label></td>
+        </tr>
+	   <tr>
+	     <td><label>
+	       <input type="checkbox" name="residencia_temporal" value="particular" id="residencia_temporal_1">
+	       Domicilio de amigos/familia</label></td>
+        </tr>
+	   <tr>
+	     <td><label>
+	       <input type="checkbox" name="residencia_temporal" value="airbnb" id="residencia_temporal_2">
+	       Airnbnb</label></td>
+        </tr>
+      </table>
+<br><br>
+    <input type="submit" name="boton2" id="boton2" value="Enviar">
+    &nbsp;
+  </form>
+</section>
+<section>
+  <h2>Formulario de contacto</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim nesciunt autem beatae rerum est excepturi illo ab, mollitia quisquam molestias ducimus unde quidem eos, quis. Facilis consequatur, doloremque voluptate obcaecati porro exercitationem quasi, atque, ratione, aliquam pariatur natus ullam reiciendis?</p>
+  <form action="procesamiento.html" method="post" name="form3" id="form3">
+    <label for="nombre">Nombre:</label>
+    <input name="nombre" type="text" required="required" id="nombre" form="form3">
+    
+    <label for="email">Email:</label>
+    <input name="email" type="email" required="required" id="email">
+    <label for="comentario">Comentario:</label>
+    <textarea name="comentario" rows="6" maxlength="150" required="required" id="comentario" placeholder="Escribe tu comentario..."></textarea>
+    <input type="submit" name="boton3" id="boton3" value="Enviar">
+        &nbsp;
+  </form>
+</section>
+<section>
+  <h2>Formulario mascota</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim nesciunt autem beatae rerum est excepturi illo ab, mollitia quisquam molestias ducimus unde quidem eos, quis. Facilis consequatur, doloremque voluptate obcaecati porro exercitationem quasi, atque, ratione, aliquam pariatur natus ullam reiciendis?</p>
+  <form id="form4" name="form4" method="post">
+    
+
+	
+
+  <label for="Cumpleaños de tu mascota">Cumpleaños de tu mascota:</label>
+  <input name="birthday" type="date" required="required" id="birthday"><br>
+
+  <label for="quantity">Edad de tu mascota:</label>
+  <input name="quantity" type="number" required="required" id="quantity" max="40" min="1"><br>
+
+  <label for="appt">Hora de tu estancia:</label>
+  <input name="appt" type="time" required="required" id="appt"><br>
+
+  <label for="favcolor">Selecciona el color del collar de tu mascota:</label>
+  <input type="color" id="favcolor" name="favcolor"><br>
+	  
+<label for="myfile">Sube la foto de tu mascota:</label>
+  <input type="file" id="myfile" name="myfile">
+  <input name="submit" type="submit" id="submit" formaction="procesamiento.html" value="Enviar">
+  <br>
+</form>
+
+<br><br>
+
+<table width="200">
+	   <tr>
+	     <td>&nbsp;</td>
+      </tr>
+	   <tr>
+	     <td>&nbsp;</td>
+      </tr>
+	   <tr>
+	     <td>&nbsp;</td>
+      </tr>
+    </table>
+<br><br>
+	 </form>
+&nbsp;
+  </form>
+</section>
+</main>
+</body>
+<footer>
+  <h6>Elaborado por Edlyn Cuanalo Rocha</h6>
+</footer>
+</html>
